@@ -14,12 +14,12 @@ import java.util.List;
 @ConfigurationProperties(prefix = "user")
 public class User {
 
-    private @Value("${userName:lkl}") String name;
-    private @Value("${age}") Integer         age;
-    private @Value("${remark}") String       remark;
+    private  String name;
+    private Integer         age;
+    private String       remark;
     private String                           address;
     private Address detailAddress;
-    private List<Address> allAddress = new ArrayList<>();
+    private List<Address> allAddress = new ArrayList<Address>();
 
     public String getName() {
         return name;
